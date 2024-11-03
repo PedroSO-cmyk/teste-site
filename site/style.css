@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+   
+}
+
+body{
+    background-color: rgb(31, 26, 26);
+    height: 100vh;
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    mix-blend-mode: multiply;
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    
+   
+
+}
+header.rolagem{
+    background-color: rgb(31, 26, 26);
+    padding: 20px 4%;
+   
+   
+
+}
+
+header.rolagem a,header.rolagem i{
+    color: #ffff;
+    
+    
+}
+
+h2.titulo{
+    font-size: 38px;
+    text-align: center;
+    color: #fff;
+}
+h3.t{
+    color: #fff;
+}
+
+header ul{
+    list-style-type: none;
+    
+
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+    
+    
+}
+
+header ul li a{
+    color:#fff;
+    text-decoration: none;
+    position: relative;
+   
+
+
+}
+nav ul li a::after{
+    content: ' ';
+    width: 0px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    top: 25px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+ 
+
+}
+nav ul li a:hover::after{
+
+    width: 100%;
+}
+
+
+.btn-feedback button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    
+    transition: 2s;
+}
+@keyframes anima{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+button:hover{
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.banner{
+    height: 100vh;
+    background-image: url;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size: 5em;
+    color: #fff;
+    margin: center;
+
+}
+   
+    
+    
+
+.banner h1 span{
+    color: #fff;
+}
+/*estilo das especialidades */
+
+section.especialidades{
+    padding: 40px 4%;
+    color: #fff;
+
+
+}
+
+section.especialidades .flex{
+    gap: 60px;
+
+}
+.especialidades .passe-box{
+    color: #fff;
+    background-color: black;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    border: 2px solid #fff;
+}
+
+.especialidades .passe-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #0a0a0a6f;
+}
+
+
+
+.especialidades .passe-box i{
+    font-size: 70px;
+    color:rgb(52, 52, 70)
+}
+.especialidades .passe-box h3{
+  font-size: 40px;
+  padding: 10%;
+  margin: center;
+ 
+}
